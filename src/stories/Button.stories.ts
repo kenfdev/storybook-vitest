@@ -33,7 +33,6 @@ export const Primary: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const codeElement = await canvas.findByText('button');
-    console.log('Canvas DOM:', canvasElement.innerHTML);
     await expect(codeElement).toBeInTheDocument();
   },
 };
